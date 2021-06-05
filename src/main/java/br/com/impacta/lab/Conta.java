@@ -1,17 +1,17 @@
 package br.com.impacta.lab;
-
 public class Conta {
+    public int numero;
+    public int agencia;
+    public String tipo;
 
-	private int numero;
-	private int agencia;
-	private String tipo;
 
-	public Conta(int numero, int agencia, String tipo) {
-		super();
-		this.numero = numero;
-		this.agencia = agencia;
-		this.tipo = tipo;
-	}
+
+    public Conta(int n,int ag,String tp){
+        super();
+        this.numero = n;
+        this.agencia = ag;
+        this.tipo = tp;
+    }
 
 	public int getNumero() {
 		return numero;
@@ -37,10 +37,10 @@ public class Conta {
 		this.tipo = tipo;
 	}
 
-	public String montarResumoDaConta() {
-		return "Numero: " + this.getNumero() + 
+    public String montarResumoDaConta(){
+        return "Numero: " + this.getNumero() + 
 		" - Agencia: " + this.getAgencia() +
 		" - Tipo: " + this.getTipo();
-	}
-	
+    }
+
 }
